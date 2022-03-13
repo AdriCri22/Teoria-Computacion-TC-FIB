@@ -1,0 +1,7 @@
+S -> XC | AY | Z |
+X -> aXb |
+Y -> bYc | 
+Z ->aZc | B |
+A -> aA |
+B -> bB | 
+C -> cC |
