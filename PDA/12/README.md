@@ -1,6 +1,8 @@
 # Statement:
+![Statement](https://github.com/AdriCri22/Teoria-Computacion-TC-FIB/blob/main/PDA/12/Statement_12.png)
 
 ## Image solution:
+![Solution](https://github.com/AdriCri22/Teoria-Computacion-TC-FIB/blob/main/PDA/12/Image_sol_12.png)
 
 ## Text solution:
     Z 0 0 4 5
