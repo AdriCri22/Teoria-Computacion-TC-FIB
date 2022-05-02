@@ -342,6 +342,19 @@
 ![NFA](https://github.com/AdriCri22/Teoria-Computacion-TC-FIB/blob/main/REG/Statements/Statement_17_L.png)
 
 ### Solution:
+    main
+    {
+      L = 
+        "	a	b	c	d
+        A0	p	1	A1	p
+        A1	p	AB	AA	p
+        1	p	A1	p	1
+        AA	p	AB	AA	p +
+        AB	p	A1	p	1 +
+        p	p	p	p	p";
+
+      output substitution(L, "c" -> "aba", "d" -> "aa");
+    }
 
 ## Exercise 18
 
