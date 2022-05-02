@@ -82,7 +82,10 @@
     S -> AB
     A -> aA |
     B -> Bb |
-    
+
+### Detailed solution:
+[Detailed solution](https://github.com/AdriCri22/Teoria-Computacion-TC-FIB/blob/main/CFG/Detailed_solutions/CFG%209.pdf)
+
 ## Exercise 10
 
 ### Statement:
@@ -116,6 +119,9 @@
     B -> bB | 
     C -> cC |
 
+### Detailed solution:
+[Detailed solution](https://github.com/AdriCri22/Teoria-Computacion-TC-FIB/blob/main/CFG/Detailed_solutions/CFG%2012.pdf)
+
 ## Exercise 13
 
 ### Statement:
@@ -133,6 +139,9 @@
     X -> bAX |
     A -> aA |
 
+### Detailed solution:
+[Detailed solution](https://github.com/AdriCri22/Teoria-Computacion-TC-FIB/blob/main/CFG/Detailed_solutions/CFG%2013.pdf)
+
 ## Exercise 14
 
 ### Statement:
@@ -146,6 +155,9 @@
 ### Solution 2:
     S -> aSa | Sb | b
  
+### Detailed solution:
+[Detailed solution](https://github.com/AdriCri22/Teoria-Computacion-TC-FIB/blob/main/CFG/Detailed_solutions/CFG%2014.pdf)
+ 
 ## Exercise 15
 
 ### Statement:
@@ -156,6 +168,9 @@
     X -> aXa | XYb |Yb
     Y -> bZ |
     Z -> aZ |bZ |
+
+### Detailed solution:
+[Detailed solution](https://github.com/AdriCri22/Teoria-Computacion-TC-FIB/blob/main/CFG/Detailed_solutions/CFG%2015.pdf)
 
 ## Exercise 16
 
@@ -174,6 +189,9 @@
     S -> aAa | bSb | a | b |
     A -> aAa | bBb | a |
     B -> bSb | b |
+
+### Detailed solution:
+[Detailed solution](https://github.com/AdriCri22/Teoria-Computacion-TC-FIB/blob/main/CFG/Detailed_solutions/CFG%2017.pdf)
 
 ## Exercise 18
 
