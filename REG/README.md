@@ -200,29 +200,148 @@
       output substitution(L, "a" -> aba, "b" -> aa, "c" -> b);
     }
 
+## Exercise 11
+
+### Statement:
+![Statement](https://github.com/AdriCri22/Teoria-Computacion-TC-FIB/blob/main/REG/Statements/Statement_11.png)
+
+### Solution:
+    main
+    {
+      a = "a";
+      b = "b";
+      ab = a | b;
+      L = ab* a ab ab;
+      aa = a a;
+      aba = a b a;
+      bab = b a b;
+      output substitution(L, "a" -> aa*, "b" -> (a | aba | bab));
+    }
+
+## Exercise 12
+
+### Statement:
+![Statement](https://github.com/AdriCri22/Teoria-Computacion-TC-FIB/blob/main/REG/Statements/Statement_12.png)
+![NFA](https://github.com/AdriCri22/Teoria-Computacion-TC-FIB/blob/main/REG/Statements/Statement_12_NFA.png)
+
+### Solution:
+    main
+    {
+      dfa = 
+        "	a	b	c	d
+        0	1	4	3	p
+        1	4	2	p	3
+        2	p	5	p	p
+        3	2	p	p	p
+        4	0	0	5	2 +
+        5	4	p	p	p
+        p	p	p	p	p";
+
+      output substitution(dfa, "c" -> "a", "d" -> "b");
+    }
+
+### Detailed Solution:
+   [Detailed_Solution](https://github.com/AdriCri22/Teoria-Computacion-TC-FIB/blob/main/REG/Detailed_solutions/REG%2012.pdf) 
 
 
+## Exercise 13
 
+### Statement:
+![Statement](https://github.com/AdriCri22/Teoria-Computacion-TC-FIB/blob/main/REG/Statements/Statement_13.png)
+![NFA](https://github.com/AdriCri22/Teoria-Computacion-TC-FIB/blob/main/REG/Statements/Statement_12_NFA.png)
 
+### Solution:
+    main
+    {
+      dfa = 
+        "	a	b	c	d
+        52	4	5	p	p
+        0	1	4	3	p
+        1	4	2	p	3
+        2	p	5	p	p
+        3	2	p	p	p
+        4	0	0	5	2 +
+        5	4	p	p	p
+        p	p	p	p	p";
 
+      output substitution(dfa, "c" -> "a", "d" -> "b");
+    }
 
+### Detailed Solution:
+   [Detailed_Solution](https://github.com/AdriCri22/Teoria-Computacion-TC-FIB/blob/main/REG/Detailed_solutions/REG%2013.pdf) 
 
+## Exercise 14
 
+### Statement:
+![Statement](https://github.com/AdriCri22/Teoria-Computacion-TC-FIB/blob/main/REG/Statements/Statement_14.png)
+![NFA](https://github.com/AdriCri22/Teoria-Computacion-TC-FIB/blob/main/REG/Statements/Statement_14_D.png)
 
+### Solution:
+    main
+    {
+      D = 
+        "	2	4	6
+        0	p	1	p
+        1	p	2	3
+        2	4	0	p
+        3	0	p	p
+        4	p	3	p +
+        p	p	p	p";
 
+      output substitution(D, "2" -> "aa", "4" -> "aaaa", "6" -> "aaaaaa");
+    }
 
+## Exercise 15
 
+### Statement:
+![Statement](https://github.com/AdriCri22/Teoria-Computacion-TC-FIB/blob/main/REG/Statements/Statement_15.png)
+![NFA](https://github.com/AdriCri22/Teoria-Computacion-TC-FIB/blob/main/REG/Statements/Statement_15_D.png)
 
+### Solution:
+    main
+    {
+      D = 
+        "	3	4	5	7	9
+        0	p	2	p	1	p
+        1	p	p	p	1	3
+        2	5	4	p	p	p
+        3	p	0	p	p	p
+        4	3	p	2	p	p
+        5	p	p	p	p	4 +
+        p	p	p	p	p	p";
 
+      output substitution(D, "3" -> "aaa", "4" -> "aaaa", "5" -> "aaaaa", "7" -> "aaaaaaa", "9" -> "aaaaaaaaa");
+    }
 
+## Exercise 16
 
+### Statement:
+![Statement](https://github.com/AdriCri22/Teoria-Computacion-TC-FIB/blob/main/REG/Statements/Statement_16.png)
+![NFA](https://github.com/AdriCri22/Teoria-Computacion-TC-FIB/blob/main/REG/Statements/Statement_16_L.png)
 
+### Solution:
+    main
+    {
+      L = 
+      "	a	b	c	d	e
+      A0	B1	A2	p	p	p	+
+      B1	p	p 	A2	B0	p
+      A2	p	p	p	B1	A0	+
+      B0	A1	B2	p	p	p
+      A1	p	p	B2	A0	p	+
+      B2	p	p	p	A1	B0
+      p	p	p	p	p	p";
 
+      output substitution(L, "a" -> "aba", "b" -> "bb", "c" -> "b", "d" -> "a", "e" -> "bbba");
+    }
 
+## Exercise 17
 
+### Statement:
+![Statement](https://github.com/AdriCri22/Teoria-Computacion-TC-FIB/blob/main/REG/Statements/Statement_17.png)
+![NFA](https://github.com/AdriCri22/Teoria-Computacion-TC-FIB/blob/main/REG/Statements/Statement_17_L.png)
 
-
-
+### Solution:
 
 
 
