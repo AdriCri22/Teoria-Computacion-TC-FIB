@@ -15,4 +15,4 @@
     xabb xa   x    +
 
 ## Detailed solution:
-![Detailed solution](https://github.com/AdriCri22/Teoria-Computacion-TC-FIB/blob/main/DFA/07/DFA%2001.pdf)
+![Detailed solution](https://github.com/AdriCri22/Teoria-Computacion-TC-FIB/blob/main/DFA/07/DFA%2007.pdf)
