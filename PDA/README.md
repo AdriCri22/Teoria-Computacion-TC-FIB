@@ -3,10 +3,10 @@
 ## Exercise 1
 
 ### Statement:
-![Statement](https://github.com/AdriCri22/Teoria-Computacion-TC-FIB/blob/main/PDA/Statements/Statement_1.png)
+![Statement](https://github.com/AdriCri22/Teoria-Computacion-TC-FIB/blob/main/PDA/Statements/Statement_01.png)
 
 ### Image solution:
-![Solution](https://github.com/AdriCri22/Teoria-Computacion-TC-FIB/blob/main/PDA/Image_solutions/Image_sol_1.png)
+![Solution](https://github.com/AdriCri22/Teoria-Computacion-TC-FIB/blob/main/PDA/Image_solutions/Image_sol_01.png)
 
 ### Text solution:
     Z 1 1 4
