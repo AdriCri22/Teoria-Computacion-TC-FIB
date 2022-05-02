@@ -1,5 +1,8 @@
 # CFG (Context-Free Grammar) - CFG (Gramáticas Incontextuales)
 
+RACSO Exercises solved by the teacher in class:
+[Exercises_teacher](https://github.com/AdriCri22/Teoria-Computacion-TC-FIB/blob/main/CFG/Detailed_solutions/Notas_CFG_RACSO_Profe.pdf)
+
 ## Exercise 1
 
 ### Statement:
