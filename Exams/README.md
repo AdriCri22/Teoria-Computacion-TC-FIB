@@ -310,6 +310,16 @@
     16  16  16  +
     2   16  16 
 
+### Exercise 5
+
+#### Statement:
+![Statement](https://github.com/AdriCri22/Teoria-Computacion-TC-FIB/blob/main/Exams/Exam_February_2016/Statement_5.png)
+
+#### Solution:
+[Solution](https://github.com/AdriCri22/Teoria-Computacion-TC-FIB/blob/main/Exams/Exam_February_2016/examen-DFAs-29.02.2016-ex5_1.pdf)
+
+#### Text solution:
+
 ## Exam on DFAs, October 1st, 2014
 
 ### Exercise 1
