@@ -343,6 +343,147 @@
 
 ### Solution:
 
+## Exercise 18
+
+### Statement:
+![Statement](https://github.com/AdriCri22/Teoria-Computacion-TC-FIB/blob/main/REG/Statements/Statement_18.png)
+
+### Solution:
+    main
+    {
+      00 = "00";
+      01 = "01";
+      10 = "10";
+      11 = "11";
+
+      output (00 | 11)* 10 (00 | 01 | 10 | 11)*;
+    }
+
+## Exercise 19
+
+### Statement:
+![Statement](https://github.com/AdriCri22/Teoria-Computacion-TC-FIB/blob/main/REG/Statements/Statement_19.png)
+
+### Solution:
+    main
+    {
+      00 = "00";
+      01 = "01";
+      10 = "10";
+      11 = "11";
+
+      output (00 | 11)* 01 (00 | 01 | 10 | 11)*;
+    }
+
+
+## Exercise 20
+
+### Statement:
+![Statement](https://github.com/AdriCri22/Teoria-Computacion-TC-FIB/blob/main/REG/Statements/Statement_20.png)
+
+### Solution:
+    main
+    {
+      0 = "0";
+      1 = "1";
+      00 = 0 0;
+      01 = 0 1;
+      10 = 1 0;
+      11 = 1 1;
+      000 = 0 0 0;
+      001 = 0 0 1;
+      010 = 0 1 0;
+      011 = 0 1 1;
+      100 = 1 0 0;
+      101 = 1 0 1;
+      110 = 1 1 0;
+      111 = 1 1 1;
+      all = 000 | 001 | 010 | 011 | 100 | 101 | 110 | 111;
+
+      output (000 | 111)* 110 ((00 | 11) (0 | 1))* (10 (0 | 1)) all* |
+            (000 | 111)* 100 ((0 | 1) (00 | 11))* ((0 | 1) 10) all*;
+    }
+
+## Exercise 21
+
+### Statement:
+![Statement](https://github.com/AdriCri22/Teoria-Computacion-TC-FIB/blob/main/REG/Statements/Statement_21.png)
+
+### Solution:
+    main
+    {
+      0 = "0";
+      1 = "1";
+      00 = 0 0;
+      01 = 0 1;
+      10 = 1 0;
+      11 = 1 1;
+      000 = 0 0 0;
+      001 = 0 0 1;
+      010 = 0 1 0;
+      011 = 0 1 1;
+      100 = 1 0 0;
+      101 = 1 0 1;
+      110 = 1 1 0;
+      111 = 1 1 1;
+      all = 000 | 001 | 010 | 011 | 100 | 101 | 110 | 111;
+
+      output (000 | 111)* 100 ((0 | 1) (00 | 11))* ((0 | 1) 01) all* |
+        (000 | 111)* 001 ((00 | 11) (0 | 1))* (10 (0 | 1)) all* |
+        (000 | 111)* 101 (all)*;
+    }
+
+## Exercise 22
+
+### Statement:
+![Statement](https://github.com/AdriCri22/Teoria-Computacion-TC-FIB/blob/main/REG/Statements/Statement_22.png)
+
+### Solution:
+    main
+    {
+      00 = "00";
+      01 = "01";
+      10 = "10";
+      11 = "11";
+
+      output (00 | 11)* 10 ((00 | 01 | 10 | 11)* - 01*);
+    }
+
+## Exercise 23
+
+### Statement:
+![Statement](https://github.com/AdriCri22/Teoria-Computacion-TC-FIB/blob/main/REG/Statements/Statement_23.png)
+
+### Solution:
+    main
+    {
+      000 = "000";
+      001 = "001";
+      010 = "010";
+      011 = "011";
+      100 = "100";
+      101 = "101";
+      110 = "110";
+      111 = "111";
+
+      output (001 (100 | 010 | 111)* 110 | (011 | 101 | 000))*;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
