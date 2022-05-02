@@ -139,6 +139,9 @@
     B  BC A  +
     BC BC BC
 
+### Detailed solution:
+[Detailed solution](https://github.com/AdriCri22/Teoria-Computacion-TC-FIB/blob/main/DFA/Detailed_solutions/DFA%208.pdf)
+
 ## Exercise 9
 
 ### Statement:
@@ -153,6 +156,9 @@
     B B C +
     C D B
     D D D
+
+### Detailed solution:
+[Detailed solution](https://github.com/AdriCri22/Teoria-Computacion-TC-FIB/blob/main/DFA/Detailed_solutions/DFA%209.pdf)
 
 ## Exercise 10
 
@@ -173,6 +179,9 @@
     J D A +
     K A D +
 
+### Detailed solution:
+[Detailed solution](https://github.com/AdriCri22/Teoria-Computacion-TC-FIB/blob/main/DFA/Detailed_solutions/DFA%2010.pdf)
+
 ## Exercise 11
 
 ### Statement:
@@ -189,6 +198,9 @@
     D H B +
     G B H +
     H H H
+
+### Detailed solution:
+[Detailed solution](https://github.com/AdriCri22/Teoria-Computacion-TC-FIB/blob/main/DFA/Detailed_solutions/DFA%2011.pdf)
 
 ## Exercise 12
 
@@ -209,6 +221,9 @@
     ba aa D  +
     bb D  bb +
 
+### Detailed solution:
+[Detailed solution](https://github.com/AdriCri22/Teoria-Computacion-TC-FIB/blob/main/DFA/Detailed_solutions/DFA%2012.pdf)
+
 ## Exercise 13
 
 ### Statement:
@@ -220,6 +235,9 @@
 ### Text solution:
       a b
     a a a +
+
+### Detailed solution:
+[Detailed solution](https://github.com/AdriCri22/Teoria-Computacion-TC-FIB/blob/main/DFA/Detailed_solutions/DFA%2013.pdf)
 
 ## Exercise 14
 
@@ -237,6 +255,9 @@
     D E C +
     E E E
     N N N +
+
+### Detailed solution:
+[Detailed solution](https://github.com/AdriCri22/Teoria-Computacion-TC-FIB/blob/main/DFA/Detailed_solutions/DFA%2014.pdf)
 
 ## Exercise 15
 
