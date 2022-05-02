@@ -11,5 +11,5 @@
     Par   Impar Par   +
     Impar Par   Impar
 
-## Detailed sol:
-![Detailed_solution](https://github.com/AdriCri22/Teoria-Computacion-TC-FIB/blob/main/DFA/01/DFA%2001.pdf)
+## Detailed solution:
+![Detailed solution](https://github.com/AdriCri22/Teoria-Computacion-TC-FIB/blob/main/DFA/01/DFA%2001.pdf)
