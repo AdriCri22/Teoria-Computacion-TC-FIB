@@ -1,4 +1,6 @@
-# Statement:
+# Exercise 12
+
+## Statement:
 ![Statement](https://github.com/AdriCri22/Teoria-Computacion-TC-FIB/blob/main/PDA/12/Statement_12.png)
 
 ## Image solution:
