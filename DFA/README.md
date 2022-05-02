@@ -367,6 +367,18 @@
     1 1 2 +
     2 3 1
     3 2 3
+    
+#### Note:
+     Knowing:
+         Add a 0 ≡ *2               (Adding a 0 at the end is equal to multiplying the number by 2)
+         Add a 1 ≡ *2 + 1           (Adding a 1 at the end is equal to multiplying the number by 2 and sum 1)
+     Procedure:
+        (0 * 2) mod 3     = 0 mod 3 = 0
+        (0 * 2 + 1) mod 3 = 1 mod 3 = 1
+        (1 * 2) mod 3     = 2 mod 3 = 2
+        (1 * 2 + 1) mod 3 = 3 mod 3 = 0
+        (2 * 2) mod 3     = 4 mod 3 = 1
+        (2 * 2 + 1) mod 3 = 5 mod 3 = 2
 
 ## Exercise 22
 
