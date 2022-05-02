@@ -1,4 +1,0 @@
-S -> A | AbX
-A -> aAa | B
-B -> b | bXb
-X -> aX | bX |
