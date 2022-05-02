@@ -1,4 +1,4 @@
-# Exercise 12
+# Exercise 5
 
 ## Statement:
 ![Statement](https://github.com/AdriCri22/Teoria-Computacion-TC-FIB/blob/main/PDA/05/Statement_5.png)
