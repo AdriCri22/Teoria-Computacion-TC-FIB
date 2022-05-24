@@ -45,3 +45,26 @@
     l -> i
     i -> r
     u -> u
+    
+## Exercise 5
+
+### Statement:
+![Statement](https://github.com/AdriCri22/Teoria-Computacion-TC-FIB/blob/main/Reductions/WP/Statements/Statement_05.png)
+
+### Solution:
+    u
+    v
+    l -> r
+    l -> r$
+
+## Exercise 6
+
+### Statement:
+![Statement](https://github.com/AdriCri22/Teoria-Computacion-TC-FIB/blob/main/Reductions/WP/Statements/Statement_06.png)
+
+### Solution:
+    u 
+    v
+    l -> r
+    l -> r$
+    $ -> $
