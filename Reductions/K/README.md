@@ -312,7 +312,7 @@
 ### Statement:
 ![Statement](https://github.com/AdriCri22/Teoria-Computacion-TC-FIB/blob/main/Reductions/K/Statements/Statement_19.png)
 
-### Solution:
+### Solution 1:
     input y
     {
       if (y == 1 and not mxxstopsininputsteps)
@@ -331,6 +331,24 @@
       output y;
     }
 
+### Solution 2:
+    input y
+    {
+      if (mxxstopsininputsteps)
+        output y;
+      else
+        if (y == 1)
+          output 1;
+    }
+
+    input y
+    {
+      if (mxxstopsininputsteps)
+        infiniteloop;
+      else
+        if (y == 1)
+          output 1;
+    }
 
 ## Exercise 20
 
@@ -412,7 +430,7 @@
 ### Statement:
 ![Statement](https://github.com/AdriCri22/Teoria-Computacion-TC-FIB/blob/main/Reductions/K/Statements/Statement_23.png)
 
-### Solution:
+### Solution 1:
     input y
     {
       if (y % 2 == 0 and not mxxstopsininputsteps)
@@ -424,6 +442,24 @@
     input y
     {
       if (not mxxstopsininputsteps)
+        output y;
+    }
+
+### Solution 2:
+    input y
+    {
+      if (mxxstopsininputsteps)
+        output y;
+      else
+        if (y < 10)
+          output y;
+    }
+
+    input y
+    {
+      if (mxxstopsininputsteps)
+        infiniteloop;
+      else
         output y;
     }
 
@@ -456,7 +492,7 @@
 ### Statement:
 ![Statement](https://github.com/AdriCri22/Teoria-Computacion-TC-FIB/blob/main/Reductions/K/Statements/Statement_25.png)
 
-### Solution:
+### Solution 1:
     input y
     {
       if (not mxxstopsininputsteps) {
@@ -475,13 +511,32 @@
         output y;
     }
 
+### Solution 2:
+    input y
+    {
+      if (mxxstopsininputsteps)
+        output y;
+      else
+        if (y % 4 == 0)
+          output y / 2;
+    }
+
+    input y
+    {
+      if (mxxstopsininputsteps)
+        infiniteloop;
+      else
+        if (y % 2 == 0 and y != 2)
+          output y;
+    }
+
 
 ## Exercise 26
 
 ### Statement:
 ![Statement](https://github.com/AdriCri22/Teoria-Computacion-TC-FIB/blob/main/Reductions/K/Statements/Statement_26.png)
 
-### Solution:
+### Solution 1:
     input y
     {
       if (not mxxstopsininputsteps) {
@@ -498,6 +553,24 @@
       }
     }
 
+### Solution 2:
+    input y
+    {
+      if (mxxstopsininputsteps)
+        output y;
+      else
+        if (y % 2 == 0)
+          output y;
+    }
+
+    input y
+    {
+      if (mxxstopsininputsteps)
+        infiniteloop;
+      else
+        if (y % 2 == 1)
+          output y;
+    }
 
 ## Exercise 27
 
