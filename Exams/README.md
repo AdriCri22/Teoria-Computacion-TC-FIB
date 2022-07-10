@@ -457,7 +457,7 @@
 
 
 ## Exam on REG+CFG+PDA, April 24th, 2015
-### Exercise 1
+### Exercise 2
 
 #### Statement:
 ![Statement](https://github.com/AdriCri22/Teoria-Computacion-TC-FIB/blob/main/Exams/Exam_April_2015/Statement_2.png)
@@ -473,3 +473,17 @@
     2 -> P(|PP, P)| -> 2
     2 -> Z |Z       -> 3
     3 -> Z(|ZP      -> 1
+    
+### Exercise 5
+
+#### Statement:
+![Statement](https://github.com/AdriCri22/Teoria-Computacion-TC-FIB/blob/main/Exams/Exam_April_2015/Statement_5.png)
+
+#### Image solution:
+![Image_solution](https://github.com/AdriCri22/Teoria-Computacion-TC-FIB/blob/main/Exams/Exam_April_2015/Image_sol_5.png)
+
+#### Text solution:
+    Z 0 1
+    0 -> Z(|ZX, X)|, X(|YP, P(|PP, P)|, Y(|YP -> 0
+    0 -> Y)|                                  -> 1
+    1 -> Z(|ZX                                -> 0
