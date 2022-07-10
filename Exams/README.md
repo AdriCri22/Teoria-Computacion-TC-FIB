@@ -487,3 +487,320 @@
     0 -> Z(|ZX, X)|, X(|YP, P(|PP, P)|, Y(|YP -> 0
     0 -> Y)|                                  -> 1
     1 -> Z(|ZX                                -> 0
+    
+## Exam on REG+CFG+PDA, April 25th, 2016
+### Exercise 2
+
+#### Statement:
+![Statement](https://github.com/AdriCri22/Teoria-Computacion-TC-FIB/blob/main/Exams/Exam_April_2016/Statement_2.png)
+
+#### Solution:
+    main
+    {
+      0 = "0";
+      1 = "1";
+      01 = (0 | 1);
+      multiple5 = "		0	1
+            0	0	1 +
+            1	2	3
+            2	4	0
+            3	1	2
+            4	3	4";
+
+      output (01 01 01 01)* (01 01) | multiple5;
+    }
+    
+### Exercise 5
+
+#### Statement:
+![Statement](https://github.com/AdriCri22/Teoria-Computacion-TC-FIB/blob/main/Exams/Exam_April_2016/Statement_5.png)
+
+#### Solution:
+    main
+    {
+
+      multiple5 =
+        " 0 1
+        0 0 1 +
+        1 2 3
+        2 4 0
+        3 1 2
+        4 3 4
+        ";
+
+      cicle = 
+        " x 
+        0 1 
+        1 2
+        2 3 +
+        3 0
+        ";
+        cicler = substitution(cicle, "x"-> ("0"|"1"));
+      output multiple5 | cicler;
+    }
+
+## Exam on REG+CFG+PDA, November 19th, 2014
+### Exercise 2
+
+#### Statement:
+![Statement](https://github.com/AdriCri22/Teoria-Computacion-TC-FIB/blob/main/Exams/Exam_November_2014/Statement_2.png)
+
+#### Solution:
+    main
+    {
+      mult3 = "	a	b
+        0	1	1 +
+        1	2	2 +
+        2	no	0 +
+        no	no	no";
+      mult5 = "	a	b
+        0	1	1 +
+        1	2	2 +
+        2	3	3 +
+        3	4	4 +
+        4	0	no +
+        no	no	no";
+
+      output mult3 & mult5;
+    }
+
+### Exercise 3
+
+#### Statement:
+![Statement](https://github.com/AdriCri22/Teoria-Computacion-TC-FIB/blob/main/Exams/Exam_November_2014/Statement_3.png)
+
+#### Image solution:
+![Image_solution](https://github.com/AdriCri22/Teoria-Computacion-TC-FIB/blob/main/Exams/Exam_November_2014/Image_sol_3.png)
+
+#### Text solution:
+    Z 0 2 3
+    0 -> Za|ZX, Zb|ZY                                           -> 1
+    0 -> Zc|Z                                                   -> 4
+    1 -> Aa|AA, Bb|BB, Ab|AB, Ba|BA, Xa|XA, Xb|XB, Yb|YB, Ya|YA -> 1
+    1 -> Ac|A, Bc|B, Xc|X, Yc|Y                                 -> 2
+    2 -> Aa|, Bb|                                               -> 2
+    2 -> Ba|, Ab|, Xb|, Ya|                                     -> 3
+    2 -> Xa|, Yb|                                               -> p
+    3 -> Za|Z, Zb|Z, Aa|, Bb|, Ba|, Ab|, Xb|, Yb|, Xa|, Ya|     -> 3
+    4 -> Za|Z, Zb|Z                                             -> 3
+    p -> Za|Z, Zb|Z                                             -> 3
+
+### Exercise 5
+
+#### Statement:
+![Statement](https://github.com/AdriCri22/Teoria-Computacion-TC-FIB/blob/main/Exams/Exam_November_2014/Statement_5.png)
+
+#### Solution:
+    main
+    {
+      DFA = "	(	)
+        0	1	no +
+        1	2	0
+        2	3	1
+        3	4	2
+        4	5	3
+        5	6	4
+        6	7	5
+        7	8	6
+        8	9	7
+        9	10	8
+        10	no	9
+        no	no	no";
+      p = "(" | ")";
+      maxP = p p p p p p p p p p p p p p p p p p p p;
+      output DFA & maxP;
+    }
+
+## Exam on REG+PDA+Reductions, June 4th, 2021
+### Exercise 1
+
+#### Statement:
+![Statement](https://github.com/AdriCri22/Teoria-Computacion-TC-FIB/blob/main/Exams/Exam_June_2021/Statement_1.png)
+
+#### Solution:
+    main
+    {
+      a = "a";
+      b = "b";
+      ab = (a | b);
+      abba = ab* a b b a ab*;
+      abba2 = (ab* a b b a b b a ab*) | (ab* a b b a ab* a b b a ab*);
+      aaa = ab* a a a ab*;
+      bbb = (ab* b b b ab* b b b ab*) | (ab* b b b b ab*);
+      output (abba - abba2 - aaa) | ((abba - abba2) & bbb);
+    }
+    
+### Exercise 2
+
+#### Statement:
+![Statement](https://github.com/AdriCri22/Teoria-Computacion-TC-FIB/blob/main/Exams/Exam_June_2021/Statement_2.png)
+
+#### Solution:
+    main
+    {
+      multiple3 = "		0	1
+            0	0	1 +
+            1	2	0
+            2	1	2";
+      multiple4 = "		0	1
+            0	0	1 +
+            1	2	3
+            2	0	1
+            3	2	3";
+      multiple8 = "		0	1
+            0	0	1 +
+            1	2	3
+            2	4	5
+            3	6	7
+            4	0	1
+            5	2	3
+            6	4	5
+            7	6	7";
+
+      output multiple3 & multiple4 & reverse(multiple8 & multiple3);
+    }
+
+### Exercise 3
+
+#### Statement:
+![Statement](https://github.com/AdriCri22/Teoria-Computacion-TC-FIB/blob/main/Exams/Exam_June_2021/Statement_3.png)
+
+#### Image solution:
+![Image_solution](https://github.com/AdriCri22/Teoria-Computacion-TC-FIB/blob/main/Exams/Exam_June_2021/Image_sol_3.png)
+
+#### Text solution:
+    Z 0 0 3
+    0 -> Za|ZA, Zb|ZB        -> 1
+    1 -> Ab|AB, Bb|BB, Ba|BA -> 1
+    1 -> Bb|                 -> 2
+    2 -> Aa|, Bb|            -> 2
+    2 -> Z |Z                -> 3
+    
+### Exercise 4
+
+#### Statement:
+![Statement](https://github.com/AdriCri22/Teoria-Computacion-TC-FIB/blob/main/Exams/Exam_June_2021/Statement_4.png)
+
+#### Solution:
+    input y
+    {
+      if (not mxxstopsininputsteps and y % 2 == 0)
+        output y;
+    }
+
+## Exam on Reductions, December 17th, 2014
+### Exercise 1
+
+#### Statement:
+![Statement](https://github.com/AdriCri22/Teoria-Computacion-TC-FIB/blob/main/Exams/Exam_December_2014/Statement_1.png)
+
+#### Solution:
+    input y
+    {
+      if (mxxstopsininputsteps)
+        output y;
+      else {
+        if (y % 5 == 0 and y != 10) 
+          accept;
+        infiniteloop;
+      }
+    }
+
+### Exercise 2
+
+#### Statement:
+![Statement](https://github.com/AdriCri22/Teoria-Computacion-TC-FIB/blob/main/Exams/Exam_December_2014/Statement_2.png)
+
+#### Solution:
+    input g
+    {
+      output g-"a"-"b", ("a"|"b")*-"b", g;
+    }
+
+### Exercise 4
+
+#### Statement:
+![Statement](https://github.com/AdriCri22/Teoria-Computacion-TC-FIB/blob/main/Exams/Exam_December_2014/Statement_4.png)
+
+#### Solution:
+    input y
+    {
+      if (not mxxstopsininputsteps)
+       output 2*y + 1;
+    }
+
+    input y
+    {
+      if (not mxxstopsininputsteps)
+        output 2*y;
+    }
+
+
+## Exam on Reductions, December 17th, 2015
+### Exercise 1
+
+#### Statement:
+![Statement](https://github.com/AdriCri22/Teoria-Computacion-TC-FIB/blob/main/Exams/Exam_December_2015/Statement_1.png)
+
+#### Solution:
+    input y
+    {
+      runmxx;
+      if (y % 3 == 0)
+        output y;
+      else if (y % 3 == 1)
+        output y * 2;
+      else if (y % 3 == 2)
+        output y;
+    }
+
+### Exercise 3
+
+#### Statement:
+![Statement](https://github.com/AdriCri22/Teoria-Computacion-TC-FIB/blob/main/Exams/Exam_December_2015/Statement_3.png)
+
+#### Solution:
+    input y
+    {
+      if (mxxstopsininputsteps)
+        infiniteloop;
+      else {
+        if (y < 3)
+          output y;
+      }
+    }
+
+    input y
+    {
+      if (mxxstopsininputsteps)
+        output y;
+      else {
+        if (y < 4) {
+          if (y % 2 == 0)
+        output 0;
+          else
+        output 1;
+        }
+      }
+    }
+
+    input y
+    {
+      if (mxxstopsininputsteps)
+        output y;
+      else {
+        if (y < 5)
+          output 0;
+      }
+    }
+
+### Exercise 4
+
+#### Statement:
+![Statement](https://github.com/AdriCri22/Teoria-Computacion-TC-FIB/blob/main/Exams/Exam_December_2015/Statement_4.png)
+
+#### Solution:
+    input g
+    {
+      output "a" ("a" | "b")* "b", "a" g "b";
+    }
