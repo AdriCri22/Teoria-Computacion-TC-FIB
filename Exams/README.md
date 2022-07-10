@@ -454,3 +454,22 @@
     103 013 103 c   +
     104 014 104 c  
     c   c   c   c  
+
+
+## Exam on REG+CFG+PDA, April 24th, 2015
+### Exercise 1
+
+#### Statement:
+![Statement](https://github.com/AdriCri22/Teoria-Computacion-TC-FIB/blob/main/Exams/Exam_April_2015/Statement_2.png)
+
+#### Image solution:
+![Image_solution](https://github.com/AdriCri22/Teoria-Computacion-TC-FIB/blob/main/Exams/Exam_April_2015/Image_sol_2.png)
+
+#### Text solution:
+    Z 0 3
+    0 -> Z(|ZP      -> 1
+    1 -> P)|        -> 0
+    1 -> P(|PP      -> 2
+    2 -> P(|PP, P)| -> 2
+    2 -> Z |Z       -> 3
+    3 -> Z(|ZP      -> 1
