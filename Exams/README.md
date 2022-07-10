@@ -804,3 +804,71 @@
     {
       output "a" ("a" | "b")* "b", "a" g "b";
     }
+
+## Exam on Reductions, June 5th, 2015
+### Exercise 1
+
+#### Statement:
+![Statement](https://github.com/AdriCri22/Teoria-Computacion-TC-FIB/blob/main/Exams/Exam_June_2015/Statement_1.png)
+
+#### Solution:
+    input y
+    {
+      runmxx;
+      if (y % 3 == 0)
+        output y + 1;
+      else if (y % 3 == 1)
+        output y;
+      else
+        output y;
+    }
+    
+### Exercise 2
+
+#### Statement:
+![Statement](https://github.com/AdriCri22/Teoria-Computacion-TC-FIB/blob/main/Exams/Exam_June_2015/Statement_2.png)
+
+#### Solution:
+    input g1,g2
+    {
+      output substitution(g1, "a" -> "aba", "b" -> "bab") "aab",
+            substitution(g2, "a" -> "aba", "b" ->"bab") "aab";
+    }
+
+### Exercise 4
+
+#### Statement:
+![Statement](https://github.com/AdriCri22/Teoria-Computacion-TC-FIB/blob/main/Exams/Exam_June_2015/Statement_4.png)
+
+#### Solution:
+    input y
+    {
+      if (mxxstopsininputsteps)
+        output y;
+      else {
+        if (y % 2 == 0)
+          output 2*y;
+        else
+          output 2*y+1;
+      }
+    }
+
+    input y
+    {
+      if (mxxstopsininputsteps)
+        infiniteloop;
+      else {
+        if (y % 2 == 0)
+          output 2*y+1;
+        else
+          output 2*y;
+      }
+    }
+
+
+
+
+
+
+
+
